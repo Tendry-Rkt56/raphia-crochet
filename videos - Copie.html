@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+<!--
+    
+TemplateMo 556 Catalog-Z
+
+https://templatemo.com/tm-556-catalog-z
+
+-->
+</head>
+<body>
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <i class="fab fa-empire mr-2"></i>
+                Sac artisanal de Madagascar
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-1" href="index.html">Photos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-2 active" aria-current="page" href="videos.html">Videos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-3" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-4" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="tm-hero d-flex justify-content-center align-items-center" id="tm-video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8LWclxmled8?si=RaMXn3wxyst_P4Ym" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <video controls loop id="tm-video">
+            <source src="https://www.youtube.com/embed/8LWclxmled8?si=RaMXn3wxyst_P4Ym" autoplay type="video/mp4">
+        </video>  
+        <i id="tm-video-control-button" class="fas fa-pause"></i>
+        
+    </div>
+
+    <div class="container-fluid tm-container-content tm-mt-60">
+        <div class="row mb-4">
+            <h2 class="col-6 tm-text-primary">
+                D'autres vidéos bientôt disponibles
+            </h2>
+        </div>
+    </div>
+    <br> <br> <br> <br>
+    <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
+        <div class="container-fluid tm-container-small">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12 px-5 mb-5">
+                    <h3 class="tm-text-primary mb-4 tm-footer-title">Quelques mots</h3>
+                    <p> <a rel="sponsored" href="#">Sac artisanale</a> expose les produits faits par une entreprise légalement fondée à Madagascar. Nos fabriquons et exportons divers produits notamment les sacs fabriqués 100% à la main.
+                    N'hésitez pas à nous contacter :)</p>
+                    <br>
+                    <br> <p>WhatsApp :+261 34 96 377 41 <br> email : sac.artisanal.de.madagascar@gmail.com</p>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+                    <ul class="tm-social-links d-flex justify-content-end pl-0 mb-5">
+                        <li class="mb-2"><a href="https://m.facebook.com/tony.rasamimanantsoa/"><i class="fab fa-facebook"></i></a></li>
+                    </ul>
+                
+                </div>
+            </div>
+           
+        </div>
+    </footer>
+    <script src="js/plugins.js"></script>
+    <script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+
+        $(function(){
+            /************** Video background *********/
+
+            function setVideoSize() {
+                const vidWidth = 1280;
+                const vidHeight = 720;
+                const maxVidHeight = 400;
+                let windowWidth = window.innerWidth;
+                let newVidWidth = windowWidth;
+                let newVidHeight = windowWidth * vidHeight / vidWidth;
+                let marginLeft = 0;
+                let marginTop = 0;
+            
+                if (newVidHeight < maxVidHeight) {
+                    newVidHeight = maxVidHeight;
+                    newVidWidth = newVidHeight * vidWidth / vidHeight;
+                }
+            
+                if(newVidWidth > windowWidth) {
+                    marginLeft = -((newVidWidth - windowWidth) / 2);
+                }
+            
+                if(newVidHeight > maxVidHeight) {
+                    marginTop = -((newVidHeight - $('#tm-video-container').height()) / 2);
+                }
+            
+                const tmVideo = $('#tm-video');
+            
+                tmVideo.css('width', newVidWidth);
+                tmVideo.css('height', newVidHeight);
+                tmVideo.css('margin-left', marginLeft);
+                tmVideo.css('margin-top', marginTop);
+            }
+
+            setVideoSize();
+
+            // Set video background size based on window size
+            let timeout;
+            window.onresize = function () {
+                clearTimeout(timeout);
+                timeout = setTimeout(setVideoSize, 100);
+            };
+
+            // Play/Pause button for video background      
+            const btn = $("#tm-video-control-button");
+
+            btn.on("click", function (e) {
+                const video = document.getElementById("tm-video");
+                $(this).removeClass();
+
+                if (video.paused) {
+                    video.play();
+                    $(this).addClass("fas fa-pause");
+                } else {
+                    video.pause();
+                    $(this).addClass("fas fa-play");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
