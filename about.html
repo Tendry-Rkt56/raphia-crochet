@@ -1,268 +1,362 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html lang="fr">
 <head>
-<meta content="Découvrez le véritable artisanat de Madagascar avec nos sacs en raphia faits main. Grossiste raphia Madagascar et fournisseur à Antananarivo." name="description"/><meta content="sacs en raphia, artisanat malgache, sacs crochetés, exportation Madagascar, sacs faits main, qualité artisanale" name="keywords"/>
-<meta content="Raphia Crochet de Madagascar" name="author"/>
-<meta content="Raphia Crochet de Madagascar - Artisanat et Exportation" property="og:title"/>
-<meta content="Fabricant de sacs artisanaux en raphia naturel, exportant dans le monde entier." property="og:description"/>
-<meta content="img/hero.jpg" property="og:image"/>
-<meta content="https://raphia-crochet-mu.vercel.app/about.html" property="og:url"/>
-<meta content="website" property="og:type"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>À propos – Artisanat malgache à Antananarivo | Raphia de Madagascar</title>
-<link href="css/bootstrap.min.css" rel="stylesheet"/>
-<link href="fontawesome/css/all.min.css" rel="stylesheet"/>
-<link href="css/templatemo-style.css" rel="stylesheet"/>
-<!--
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta content="Découvrez le véritable artisanat de Madagascar avec nos sacs en raphia faits main. Grossiste raphia Madagascar et fournisseur à Antananarivo." name="description"/>
+    <meta content="sacs en raphia, artisanat malgache, sacs crochetés, exportation Madagascar, sacs faits main, qualité artisanale" name="keywords"/>
+    <meta content="Raphia Crochet de Madagascar" name="author"/>
     
-TemplateMo 556 Catalog-Z
+    <title>À propos – Artisanat malgache | Raphia de Madagascar</title>
 
-https://templatemo.com/tm-556-catalog-z
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <!-- Google Fonts Premium -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
--->
+    <style>
+        :root {
+            --primary-color: #8D6E63; /* Marron Raphia */
+            --secondary-color: #FDFBF7; /* Crème papier */
+            --accent-color: #5D4037; /* Marron foncé */
+            --text-color: #4A4A4A;
+            --gold: #C5A059;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-color);
+            background-color: #fff;
+            line-height: 1.8;
+        }
+
+        h1, h2, h3, .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            color: var(--accent-color);
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #fff;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            padding: 1rem 0;
+        }
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--primary-color) !important;
+        }
+        .nav-link {
+            color: var(--text-color) !important;
+            font-weight: 500;
+            margin-left: 15px;
+            transition: color 0.3s;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: var(--gold) !important;
+        }
+
+        /* Hero Section */
+        .page-hero {
+            height: 60vh;
+            background-image: url('img/hero.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Parallax effect */
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .page-hero::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.5);
+        }
+        .page-hero h1 {
+            color: white;
+            position: relative;
+            z-index: 1;
+            font-size: 3.5rem;
+            text-align: center;
+        }
+
+        /* Content Sections */
+        .section-padding {
+            padding: 80px 0;
+        }
+        .bg-cream {
+            background-color: var(--secondary-color);
+        }
+
+        .section-title {
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--gold);
+            margin-top: 15px;
+        }
+        .center-title {
+            text-align: center;
+        }
+        .center-title::after {
+            margin: 15px auto 0;
+        }
+
+        /* Images */
+        .img-shadow {
+            border-radius: 8px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        /* Icons */
+        .feature-icon {
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        /* Step Guide */
+        .step-item {
+            margin-bottom: 40px;
+            border-left: 3px solid var(--secondary-color);
+            padding-left: 30px;
+            transition: border-color 0.3s;
+        }
+        .step-item:hover {
+            border-left: 3px solid var(--gold);
+        }
+        .step-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            color: var(--gold);
+            font-style: italic;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c2c2c;
+            color: #ccc;
+            padding: 60px 0;
+        }
+        footer h3 {
+            color: var(--gold);
+            font-size: 1.5rem;
+        }
+        footer a {
+            color: #ccc;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: var(--gold);
+        }
+        .social-icons a {
+            font-size: 1.5rem;
+            margin-right: 15px;
+        }
+    </style>
 </head>
 <body>
-<section>
-<h2>Artisanat et raphia de Madagascar</h2>
-<p>
-    Découvrez notre univers dédié à l'<strong>artisanat de Madagascar</strong>, à travers des créations uniques issues de notre <strong>usine de sac en raphia à Madagascar</strong>.
-    Nous sommes reconnus comme <strong>grossiste raphia Madagascar</strong> et <strong>fournisseur de raphia à Madagascar</strong>, basés à <strong>artisanat malgache Antananarivo</strong>.
-    Chaque produit est fabriqué avec soin en <strong>raphia de Madagascar</strong>, dans le respect de l’environnement.
-    Spécialistes du <strong>crochet raphia de Madagascar</strong>, nous proposons aussi des accessoires en <strong>tissu rabane</strong> comme le <strong>Sac en raphia au crochet</strong>.
-  </p>
-</section>
 
-<!-- Page Loader -->
-<div id="loader-wrapper">
-<div id="loader"></div>
-<div class="loader-section section-left"></div>
-<div class="loader-section section-right"></div>
-</div>
-<nav class="navbar navbar-expand-lg">
-<div class="container-fluid">
-<a class="navbar-brand" href="index.html">
-<i class="fab fa-empire mr-2"></i>
-                Raphia crochet de Madagascar
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fab fa-empire mr-2"></i> Raphia Crochet
             </a>
-<button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
-<i class="fas fa-bars"></i>
-</button>
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-<ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-<li class="nav-item">
-<a class="nav-link nav-link-1" href="index.html">Photos</a>
-</li>
-<li class="nav-item">
-<a class="nav-link nav-link-2" href="videos.html">Videos</a>
-</li>
-<li class="nav-item">
-<a aria-current="page" class="nav-link nav-link-3 active" href="about.html">À propos</a>
-</li>
-<li class="nav-item">
-<a class="nav-link nav-link-4" href="contact.html">Contact</a>
-</li>
-<li class="nav-item">
-<a class="nav-link nav-link-4" href="./en/index.html">English</a>
-</li>
-</ul>
-</div>
-</div>
-</nav>
-<div class="tm-hero d-flex justify-content-center align-items-center" alt="Image à propos de Sac artisanale" data-image-src="img/hero.jpg" data-parallax="scroll"   style="height: 63vh;"></div>
-<div class="container-fluid tm-mt-60">
-<div class="row mb-4">
-<h1 class="col-12 tm-text-primary">
-                À propos de Raphia crochet de Madagascar
-            </h1>
-</div>
-<div class="row tm-mb-74 tm-row-1640">
-<div class="col-lg-5 col-md-6 col-12 mb-3">
-<img alt="Travail d'equipe" class="img-fluid" src="./sary/Gens De Travail D'équipe Avec Des Pièces De Puzzle _ Vecteur Gratuite.jpeg"/>
-</div>
-<div class="col-lg-7 col-md-6 col-12">
-<div class="tm-about-img-text">
-<p class="mb-4">
-</p>
-<p>
-                    A la base, la société était une société familiale mais en vu de la très grande quantité de demande,
-                    la société s'élargit et en plein expansion.
-                  </p>
-<p>Nous existons depuis plus de 5 ans à Madagascar avec juste 3 employés au départ.2023 était une 
-                        plaque tournante pour nous car nous avons voulu nous investir beaucoup plus dans la fabrication de sac
-                        en rabane (raphia tressé) et sac crocheté en raphia.Pour celà, nous nous sommes inscrits auprès de l'Etat en tant que
-                         fabricants de sacs et actuelement nous avons un Numéro d'Identité Fiscale (NIF), une carte statique et une carte d'exportateur.   
-                    </p>
-</div>
-</div>
-</div>
-<div class="row tm-mb-50">
-<div class="col-md-6 col-12">
-<div class="tm-about-2-col">
-<h2 class="tm-text-primary mb-4">
-<h2 style="font-size: 20px;">Pourquoi choisir Raphia Crochet de Madagascar ?</h2>
-</h2>
-<p class="mb-4">
-<h3><u class="tm-text-primary mb-4">LA QUALITE PRIME.</u></h3>
-</p>
-<p>
-                        Notre première devise est "La qualité avant tout".</p>
-<p> On mise beaucoup sur la qualité de nos produits.
-                        Pour celà,chaque produit est minutieusement inspecté par des controleurs qualités...euh oui...même si
-                        la commande est des 12.000 produits, les 12.000 produits ont été vérifiés avant de quitter nos locaux.
-                        De plus nos collaborateurs sont déjà tous très expérimentés et font tous des merveilles.
-                        Arrivé chez nos clients, on garantit que les produitssont conformes aux cahiers de charges et aux commandes. 
-                    </p>
-</div>
-</div>
-<div class="col-md-6 col-12">
-<div class="tm-about-2-col">
-<h3 class="tm-text-primary mb-4">
-<br/><br/>
-<u>LE TEMPS EST PRECIEUX.</u>
-</h3>
-<p class="mb-4">
-                        Bah oui. On dit toujours que "Le temps c'est de l'argent" et c'est vrai.
-                    </p>
-<p>
-                        Chez Raphia crochet, une deadline convenue avec le client est une deadline bien réflechi.
-                        On étudie le nombre de commande et la productivité qu'on a. De ce fait, on s'assure que la commande soit faite en temps et en heure convenue.
-                        Nos collaborateurs n'hésitent pas faire des heures supplémentaires selon la productivité (tout en respectuant les droits de traval).
-                    </p>
-</div>
-</div>
-</div> <!-- row -->
-<h2 class="tm-text-primary mb-4">
-            Quelles sont les étapes à suivre?
-        </h2>
-<div class="row tm-mb-50">
-<div class="col-md-4 col-12">
-<div class="tm-about-3-col">
-<div class="tm-about-icon-container mb-5">
-<i class="fas fa-desktop fa-3x tm-text-primary"></i>
-</div>
-<h3 class="tm-text-primary mb-4">Visionez nos catalogues.</h3>
-<p class="mb-4">Ce site est juste une exposition de nos catalogues.</p>
-<p>Tous les modèles que vous voyez sur ce site sont des modèles qu'on a déjà fait. La qualité des ces produits sont aux normes exigées par nos clients.
-                       Pour plus de confiance,on vous sollicite pour visitez nos ateliers,pour celà, 
-                    </p>
-<p>
-                        Contactez nous sur WhatsApp :+261 34 96 377 41
-                    </p>
-<p>
-                        email : sac.artisanal.de.madagascar@gmail.com                   
-                    </p>
-</div>
-</div>
-<div class="col-md-4 col-12">
-<div class="tm-about-3-col">
-<div class="tm-about-icon-container mb-5">
-<i class="fas fa-cart-arrow-down fa-3x tm-text-primary"></i>
-</div>
-<h3 class="tm-text-primary mb-4">Validation de la commande</h3>
-<p class="tm-mb-50">Et oui...le moment de vérité.</p>
-<p>
-                        Pour confirmer votre commande,on demande un accompte qu'on pourra disciter au préalable.En tout cas, nous insistons sur le fait que vous devrez faire un accompte pour qu'on puisse commencer la production.
-                    </p>
-</div>
-</div>
-<div class="col-md-4 col-12">
-<div class="tm-about-3-col">
-<div class="tm-about-icon-container mb-5">
-<i class="fas fa-plane-departure fa-3x tm-text-primary"></i>
-</div>
-<h2 class="tm-text-primary mb-4">Envoi de votre colis</h2>
-<p class="mb-4">Quand la commande sera terminé, nous ferons tout pour que le colis sera arrivé dans la destination de votre choix</p>
-<p>Cependant,vous devrez couvrir le coût de déplacement de votre commande. La procédure d'envoi dépendra de votre demande mais prévenez nous avant la commande.</p>
-</div>
-</div>
-</div>
-</div> <!-- container-fluid, tm-container-content -->
-<div class="container-fluid d-flex align-items-center justify-content-center flex-column my-5">
-<h1 class="tm-text-primary mb-4">
-            Comment crocheter du raphia ?
-        </h1>
-<p class="container">
-            Le raphia est une fibre naturelle très prisée pour sa polyvalence et sa résistance, utilisée dans de nombreux domaines tels que la mode, la décoration, et même le jardinage. Dans cet article, nous vous présenterons comment crocheter du raphia, les techniques pour le faire, ainsi que les astuces pour obtenir un résultat optimal. Que vous soyez débutant ou expert en crochet, vous découvrirez les spécificités de cette matière et comment l'exploiter au mieux.
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Photos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="videos.html">Vidéos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./en/index.html">English</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-            Le raphia provient des feuilles du palmier Raphia, originaire de Madagascar, et est traditionnellement utilisé pour la confection de paniers, chapeaux, sacs, et bien d'autres objets artisanaux. En raison de sa texture et de son aspect naturel, le raphia est également très populaire pour les projets de décoration et de loisirs créatifs. Dans les lignes qui suivent, nous vous guiderons à travers les différentes étapes pour crocheter du raphia.
+    <!-- Hero Section -->
+    <div class="page-hero">
+        <h1>Notre Histoire & Savoir-faire</h1>
+    </div>
 
-            Avant de commencer à crocheter du raphia, il est important de bien choisir son matériel et de préparer la fibre. Vous aurez besoin d'un crochet adapté à la grosseur du raphia et d'un peu de patience pour maîtriser cette technique. Alors, sans plus tarder, découvrez comment crocheter du raphia en suivant nos conseils et astuces.
+    <!-- Intro & Histoire -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img alt="Travail d'equipe" class="img-fluid img-shadow" src="./sary/Gens De Travail D'équipe Avec Des Pièces De Puzzle _ Vecteur Gratuite.jpeg"/>
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h2 class="section-title">À propos de Raphia crochet de Madagascar</h2>
+                    <p class="lead" style="color: var(--primary-color);">Artisanat malgache, tradition et modernité.</p>
+                    <p>
+                        Découvrez notre univers dédié à l'<strong>artisanat de Madagascar</strong>, à travers des créations uniques issues de notre <strong>usine de sac en raphia à Madagascar</strong>.
+                        Nous sommes reconnus comme grossiste et fournisseur, basés à Antananarivo. Chaque produit est fabriqué avec soin en raphia de Madagascar, dans le respect de l’environnement.
+                    </p>
+                    <p>
+                        À la base, la société était une structure familiale. Face à la très grande quantité de demande, l'entreprise s'élargit et est en pleine expansion.
+                        Nous existons depuis plus de 5 ans avec juste 3 employés au départ. 2023 était une plaque tournante pour nous car nous avons investi massivement dans la fabrication de sacs en rabane (raphia tressé) et sacs crochetés.
+                    </p>
+                    <p class="text-muted small mt-3">
+                        <i class="fas fa-check-circle text-success me-2"></i> Numéro d'Identité Fiscale (NIF)<br>
+                        <i class="fas fa-check-circle text-success me-2"></i> Carte statistique<br>
+                        <i class="fas fa-check-circle text-success me-2"></i> Carte d'exportateur agréé
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        </p>
-<div class="row g-5 container-fluid">
-<div class="p-3 d-flex text-left align-items-center justify-content-center flex-column gap-3 col-md-4" style="border-radius:2px">
-<h3 style="height:20%">1. Choisir et préparer le raphia</h3>
-<p style="height:80%;">
-                    Pour bien débuter votre projet de crochet en raphia, il est essentiel de choisir une fibre de qualité et de la préparer correctement. Vous pouvez acheter du raphia en pelote ou en écheveau, selon vos préférences. Veillez à ce que les fibres soient assez longues et régulières pour faciliter le travail.
-                    Avant de commencer à crocheter, déroulez et étirez légèrement le raphia pour l'assouplir. Cela facilitera le glissement du crochet et évitera d'abîmer la fibre. Si vous utilisez du raphia en écheveau, pensez à le diviser en plusieurs brins, selon l'épaisseur souhaitée pour votre ouvrage.
+    <!-- Valeurs (Qualité & Temps) -->
+    <section class="section-padding bg-cream">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="section-title center-title">Pourquoi nous choisir ?</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="p-4 bg-white img-shadow h-100">
+                        <i class="fas fa-gem fa-3x feature-icon"></i>
+                        <h3>La Qualité Prime</h3>
+                        <p>
+                            Notre première devise est "La qualité avant tout". Chaque produit est minutieusement inspecté par des contrôleurs qualités. Même pour une commande de 12.000 pièces, chaque unité est vérifiée avant de quitter nos locaux. 
+                            Nos collaborateurs expérimentés garantissent des produits conformes aux cahiers de charges.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="p-4 bg-white img-shadow h-100">
+                        <i class="fas fa-hourglass-half fa-3x feature-icon"></i>
+                        <h3>Le Respect des Délais</h3>
+                        <p>
+                            "Le temps c'est de l'argent". Une deadline convenue avec le client est sacrée. 
+                            Nous étudions nos capacités de production avant de valider. Nos équipes s'organisent pour que votre commande soit prête en temps et en heure, tout en respectant scrupuleusement le droit du travail.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Processus de commande -->
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="section-title center-title text-center mb-5">Les étapes à suivre</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="px-3">
+                        <i class="fas fa-images fa-3x feature-icon"></i>
+                        <h4>1. Catalogue & Visite</h4>
+                        <p>Visionnez nos catalogues en ligne. Ce sont des modèles réels déjà réalisés. Vous pouvez également visiter nos ateliers pour plus de confiance.</p>
+                        <a href="https://wa.me/261349637741" class="btn btn-outline-dark btn-sm mt-2">Contactez-nous sur WhatsApp</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="px-3">
+                        <i class="fas fa-file-signature fa-3x feature-icon"></i>
+                        <h4>2. Validation & Acompte</h4>
+                        <p>C'est le moment de vérité. Après discussion, un acompte est nécessaire pour lancer la production et l'achat des matières premières.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="px-3">
+                        <i class="fas fa-plane-departure fa-3x feature-icon"></i>
+                        <h4>3. Expédition</h4>
+                        <p>Une fois la commande terminée, nous organisons l'envoi vers la destination de votre choix (frais de transport à votre charge).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Éducative (Article style) -->
+    <section class="section-padding bg-cream">
+        <div class="container" style="max-width: 900px;">
+            <div class="text-center mb-5">
+                <h2 class="section-title center-title">L'art du Crochet en Raphia</h2>
+                <p class="lead">Le guide complet pour comprendre notre métier</p>
+            </div>
+            
+            <div class="bg-white p-5 img-shadow">
+                <p class="mb-5">
+                    Le raphia est une fibre naturelle très prisée pour sa polyvalence et sa résistance. Le raphia provient des feuilles du palmier Raphia, originaire de Madagascar. Voici comment la magie opère :
                 </p>
-</div>
-<div class="p-3 d-flex text-left align-items-center justify-content-center flex-column gap-3 col-md-4" style="border-radius:2px">
-<h3 style="height:20%">2. Choisir un crochet adapté</h3>
-<p style="height:80%">
-                    Le choix du crochet est primordial pour réussir à crocheter du raphia. Optez pour un crochet en métal, en bois, ou en plastique, avec une taille adaptée à l'épaisseur de votre raphia. Généralement, un crochet de taille 4 à 6 mm convient pour la plupart des projets. N'hésitez pas à tester différentes tailles de crochet pour trouver celle qui vous convient le mieux.
-                </p>
-</div>
-<div class="p-3 d-flex text-left align-items-center justify-content-center flex-column gap-3 col-md-4" style="border-radius:2px">
-<h3 style="height:20%">3. Réaliser les premiers points</h3>
-<p style="height:80%">
-                    Commencez par faire un nœud coulant et réalisez une chaînette de base, en prenant soin de ne pas trop serrer les mailles. Il est important de crocheter légèrement plus lâche que d'habitude, pour permettre au raphia de bien se dérouler et éviter de le casser.
-                    Ensuite, réalisez les premiers points de votre ouvrage en suivant le point de crochet choisi (maille serrée, maille coulée, demi-bride, bride, etc.). Les points simples sont généralement préférables pour les projets en raphia, car ils mettent en valeur la texture de la fibre
-                </p>
-</div>
-<div class="p-3 d-flex text-left align-items-center justify-content-center flex-column gap-3 col-md-4" style="border-radius:2px">
-<h3 style="height:20%">4. Astuces pour crocheter du raphia</h3>
-<p style="height:80%">
-                    Voici quelques astuces pour vous aider à crocheter du raphia plus facilement :
-                    <ul>
-<li><p>Travaillez avec des mains propres et sèches pour éviter de salir ou d'abîmer la fibre.</p></li>
-<li><p>Utilisez un marqueur de mailles pour repérer le début de chaque tour et faciliter le comptage des mailles.</p></li>
-<li><p>Abaissez légèrement la tension de votre fil pour éviter de casser le raphia.</p></li>
-<li><p>Alternez les points et les couleurs pour créer des motifs et donner du relief à votre ouvrage.</p></li>
-</ul>
-</p>
-</div>
-<div class="p-3 d-flex text-left align-items-center justify-content-center flex-column gap-3 col-md-4" style="border-radius:2px">
-<h3 style="height:20%">5. Finitions et entretien de l'ouvrage</h3>
-<p style="height:80%">
-                    Une fois votre ouvrage terminé, rentrez les fils de raphia à l'aide d'une aiguille à laine ou d'un crochet fin. Faites un nœud discret et coupez l'excédent de raphia. Pour entretenir votre création en raphia, il est recommandé de la laver à la main avec de l'eau tiède et un savon doux. Laissez sécher à plat pour conserver la forme de votre ouvrage.
-                </p>
-</div>
-</div>
-<div class="container-fluid d-flex align-items-center justify-content-center flex-column gap-2">
-<h3 class="align-self-center">Conclusion</h3>
-<p class="container">
-                En suivant ces conseils et astuces, vous pourrez facilement crocheter du raphia et réaliser de magnifiques créations, aussi bien pour la mode que pour la décoration. N'hésitez pas à vous lancer dans cette technique originale et à partager vos réalisations avec d'autres passionnés de crochet et de raphia.</p>
-</div>
-</div>
-<footer class="tm-bg-gray pt-5 pb-3">
-<div class="container-fluid tm-container-small">
-<div class="row">
-<div class="col-lg-6 col-md-12 mb-5">
-<h3 class="tm-text-primary mb-4">À Propos</h3>
-<p>Raphia Crochet de Madagascar fabrique des sacs artisanaux 100% naturels et faits main. Basée à Madagascar, notre entreprise exporte dans le monde entier.</p>
-<p><strong>Contact :</strong> WhatsApp : +261 34 96 377 41 | Email : sac.artisanal.de.madagascar@gmail.com</p>
-</div>
-<div class="col-lg-3 col-md-6 col-sm-6 col-12">
-<h3 class="tm-text-primary mb-4">Réseaux Sociaux</h3>
-<ul class="tm-social-links" style="display: flex;">
-<li><a href="https://web.facebook.com/Raphizio/"><i class="fab fa-facebook"></i></a></li>
-<li class="mb-2"><a href="https://www.tiktok.com/@sac.raphia.mada"><i class="fab fa-tiktok"></i></a></li>
-<li class="mb-2"><a href="https://www.youtube.com/@sacartisanaldeMADAGASAR"> <i class="fab fa-youtube"></i></a></li>
-</ul>
-</div>
-</div>
-</div>
-</footer>
-<script src="js/plugins.js"></script>
-<script>
-        $(window).on("load", function() {
-            $('body').addClass('loaded');
-        });
-    </script>
+
+                <div class="step-item">
+                    <span class="step-number">Étape 01</span>
+                    <h4>Choisir et préparer le raphia</h4>
+                    <p>Pour bien débuter, il est essentiel de choisir une fibre de qualité. Avant de commencer à crocheter, nous déroulons et étirons légèrement le raphia pour l'assouplir, facilitant ainsi le travail sans abîmer la fibre.</p>
+                </div>
+
+                <div class="step-item">
+                    <span class="step-number">Étape 02</span>
+                    <h4>L'outil parfait</h4>
+                    <p>Le choix du crochet est primordial. Nous utilisons généralement un crochet de taille 4 à 6 mm selon l'épaisseur, en métal ou en bois, pour une précision optimale.</p>
+                </div>
+
+                <div class="step-item">
+                    <span class="step-number">Étape 03</span>
+                    <h4>La création des mailles</h4>
+                    <p>Tout commence par un nœud coulant. Nous crochetons légèrement plus lâche que d'habitude pour éviter que le raphia ne casse, en utilisant des points comme la maille serrée ou la bride pour mettre en valeur la texture.</p>
+                </div>
+
+                <div class="step-item">
+                    <span class="step-number">Étape 04</span>
+                    <h4>Finitions et Entretien</h4>
+                    <p>Une fois l'ouvrage terminé, les fils sont rentrés minutieusement. Pour l'entretien, le raphia se nettoie simplement avec un chiffon humide ou un lavage doux à la main.</p>
+                </div>
+
+                <div class="text-center mt-5">
+                    <p class="font-italic">"N'hésitez pas à vous lancer dans cette technique originale. C'est notre passion, et nous sommes fiers de la partager avec le monde."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-5">
+                    <h3 class="mb-4">À Propos</h3>
+                    <p>Raphia Crochet de Madagascar fabrique des sacs artisanaux 100% naturels et faits main. Basée à Madagascar, notre entreprise exporte dans le monde entier l'excellence du savoir-faire malgache.</p>
+                    <p class="mt-4"><strong style="color:var(--gold)">Contact :</strong><br> 
+                    <i class="fab fa-whatsapp"></i> +261 34 96 377 41 <br>
+                    <i class="far fa-envelope"></i> sac.artisanal.de.madagascar@gmail.com</p>
+                </div>
+                <div class="col-lg-3 offset-lg-3 col-md-6 col-sm-6 col-12">
+                    <h3 class="mb-4">Suivez-nous</h3>
+                    <div class="social-icons">
+                        <a href="https://web.facebook.com/Raphizio/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.tiktok.com/@sac.raphia.mada"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/@sacartisanaldeMADAGASAR"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

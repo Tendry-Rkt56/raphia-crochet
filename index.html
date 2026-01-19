@@ -1,286 +1,605 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html lang="fr">
 <head>
-<meta content="Découvrez le véritable artisanat de Madagascar avec nos sacs en raphia faits main. Grossiste raphia Madagascar et fournisseur à Antananarivo." name="description"/><meta content="sacs en raphia, artisanat malgache, sacs crochetés, exportation Madagascar, sacs faits main, qualité artisanale" name="keywords"/>
-<meta content="Raphia Crochet de Madagascar" name="author"/>
-<meta content="Raphia Crochet de Madagascar - Artisanat et Exportation" property="og:title"/>
-<meta content="Fabricant de sacs artisanaux en raphia naturel, exportant dans le monde entier." property="og:description"/>
-<meta content="img/hero.jpg" property="og:image"/>
-<meta content="https://raphia-crochet-mu.vercel.app/" property="og:url"/>
-<meta content="website" property="og:type"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Sacs en raphia – Artisanat de Madagascar | Usine &amp; Grossiste</title>
-<link href="css/bootstrap.min.css" rel="stylesheet"/>
-<link href="fontawesome/css/all.min.css" rel="stylesheet"/>
-<link href="css/templatemo-style.css" rel="stylesheet"/>
-<!--
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Découvrez le véritable artisanat de Madagascar avec nos sacs en raphia faits main. Grossiste raphia Madagascar et fournisseur à Antananarivo." name="description"/>
+    <meta content="sacs en raphia, artisanat malgache, sacs crochetés, exportation Madagascar, sacs faits main, qualité artisanale" name="keywords"/>
+    <meta content="Raphia Crochet de Madagascar" name="author"/>
+    <meta content="Raphia Crochet de Madagascar - Artisanat et Exportation" property="og:title"/>
+    <meta content="Fabricant de sacs artisanaux en raphia naturel, exportant dans le monde entier." property="og:description"/>
+    <meta content="img/hero.jpg" property="og:image"/>
+    <meta content="https://raphia-crochet-mu.vercel.app/" property="og:url"/>
+    <meta content="website" property="og:type"/>
+    <meta content="summary_large_image" name="twitter:card"/>
     
-TemplateMo 556 Catalog-Z
+    <title>Sacs en raphia – Artisanat de Madagascar | Usine &amp; Grossiste</title>
 
-https://templatemo.com/tm-556-catalog-z
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <!-- Google Fonts Premium -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- GLightbox CSS (Galerie) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 
--->
+    <style>
+        :root {
+            --primary-color: #8D6E63; /* Marron Raphia */
+            --secondary-color: #FDFBF7; /* Crème papier */
+            --accent-color: #5D4037; /* Marron foncé */
+            --text-color: #4A4A4A;
+            --gold: #C5A059;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+            line-height: 1.8;
+        }
+
+        h1, h2, h3, .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            color: var(--accent-color);
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #fff;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            padding: 1rem 0;
+        }
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--primary-color) !important;
+        }
+        .nav-link {
+            color: var(--text-color) !important;
+            font-weight: 500;
+            margin-left: 15px;
+            transition: color 0.3s;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: var(--gold) !important;
+        }
+
+        /* Hero Section */
+        .tm-hero {
+            position: relative;
+            height: 70vh;
+            background-image: url('sary/.trashed-1714225533-rabane-raphia-tissu-naturel-.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .tm-hero::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.4);
+        }
+        .tm-hero h1 {
+            position: relative;
+            z-index: 1;
+            color: #fff;
+            font-size: 3.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            text-align: center;
+            padding: 0 15px;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 0;
+        }
+        
+        .intro-box {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            margin-top: -80px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--gold);
+            margin: 15px auto 0;
+        }
+
+        /* Gallery Cards */
+        .card-custom {
+            border: none;
+            background: transparent;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        .card-custom:hover {
+            transform: translateY(-5px);
+        }
+        .card-img-wrapper {
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            aspect-ratio: 1 / 1.2;
+            position: relative;
+            cursor: zoom-in; /* Curseur loupe pour indiquer le clic */
+        }
+        .card-img-wrapper a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .card-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: transform 0.5s ease;
+        }
+        .card-custom:hover img {
+            transform: scale(1.05);
+        }
+        .card-caption {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .card-caption h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 0;
+            color: var(--accent-color);
+        }
+
+        /* CLASSE POUR CACHER DES IMAGES (mais visibles dans la galerie) */
+        .card-custom-hidden {
+            display: none !important;
+        }
+
+        /* Button */
+        .btn-premium {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background 0.3s;
+            display: inline-block;
+            font-weight: 600;
+            letter-spacing: 1px;
+            border: 2px solid var(--primary-color);
+        }
+        .btn-premium:hover {
+            background-color: transparent;
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c2c2c;
+            color: #ccc;
+            padding: 60px 0;
+            margin-top: 60px;
+        }
+        footer h3 {
+            color: var(--gold);
+            font-size: 1.5rem;
+        }
+        footer a {
+            color: #ccc;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: var(--gold);
+        }
+        .social-icons a {
+            font-size: 1.5rem;
+            margin-right: 15px;
+        }
+
+        /* Responsive Fixes */
+        @media (max-width: 768px) {
+            .tm-hero h1 { font-size: 2.5rem; }
+            .intro-box { margin-top: 20px; padding: 20px; }
+        }
+    </style>
 </head>
-<main>
-<body>
-<section>
-<h2>Artisanat et raphia de Madagascar</h2>
-<p>
-    Découvrez notre univers dédié à l'<strong>artisanat de Madagascar</strong>, à travers des créations uniques issues de notre <strong>usine de sac en raphia à Madagascar</strong>.
-    Nous sommes reconnus comme <strong>grossiste raphia Madagascar</strong> et <strong>fournisseur de raphia à Madagascar</strong>, basés à <strong>artisanat malgache Antananarivo</strong>.
-    Chaque produit est fabriqué avec soin en <strong>raphia de Madagascar</strong>, dans le respect de l’environnement.
-    Spécialistes du <strong>crochet raphia de Madagascar</strong>, nous proposons aussi des accessoires en <strong>tissu rabane</strong> comme le <strong>Sac en raphia au crochet</strong>.
-  </p>
-</section>
 
-<!-- Page Loader -->
-<div id="loader-wrapper">
-<div id="loader"></div>
-<div class="loader-section section-left"></div>
-<div class="loader-section section-right"></div>
-</div>
-<nav class="navbar navbar-expand-lg">
-<div class="container-fluid">
-<a class="navbar-brand" href="#">
-<i class="fab fa-empire mr-2"></i>
-                    Raphia crochet de Madagascar
-                </a>
-<button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
-<i class="fas fa-bars"></i>
-</button>
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-<ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-<li class="nav-item">
-<a aria-current="page" class="nav-link nav-link-1 active" href="index.html">Photos</a>
-</li>
-<li class="nav-item">
-<a class="nav-link nav-link-2" href="videos.html">Videos</a>
-</li>
-<li class="nav-item">
-<a class="nav-link nav-link-3" href="about.html">À propos</a>
-</li>
-<li class="nav-item">
-<a class="nav-link nav-link-4" href="contact.html">Contact</a>
-</li>
-<li class="nav-item">
-<a class="nav-link nav-link-4" href="./en/index.html">English</a>
-</li>
-</ul>
-</div>
-</div>
-</nav>
-<div class="tm-hero d-flex justify-content-center align-items-center" data-image-src="sary/.trashed-1714225533-rabane-raphia-tissu-naturel-.jpg" data-parallax="scroll">
-<h1 class="text-white">Raphia Crochet de Madagascar</h1>
-</div>
-<div class="container mt-5">
-<div class="row">
-<div class="col-12">
-<section style="background-color: #f9f9f9; padding: 20px; border-radius: 12px;">
-<h2 class="tm-text-primary">Fabrication de sacs en raphia 100% naturel - Made in Madagascar</h2>
-<p style="font-size: 1.1rem;">
-                    Bienvenue chez <strong>Raphia Crochet de Madagascar</strong>, le spécialiste des <em>sacs faits main en raphia naturel</em>. Nos artisans malgaches créent des modèles uniques avec passion et savoir-faire. Que vous soyez revendeur, distributeur ou amoureux de l’artisanat, découvrez notre <strong>catalogue de sacs crochetés</strong> prêts à l’exportation. Qualité, durabilité et authenticité au cœur de chaque création.
-                </p>
-</section>
-</div>
-</div>
-</div>
-<div class="container-fluid tm-container-content tm-mt-60">
-<div class="row mb-4">
-<h2 class="col-6 tm-text-primary">
-                    Nos matières premieres
-                </h2>
-</div>
-<div class="row tm-mb-90 tm-gallery">
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-<figure class="effect-ming tm-video-item">
-<img alt="Rouleau de rabane naturel" class="img-fluid" src="sary/rouleau_rabane.jpeg"/>
-<figcaption class="d-flex align-items-center justify-content-center">
-<h2>Rouleau de rabane naturel</h2>
-</figcaption>
-</figure>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-<figure class="effect-ming tm-video-item">
-<img alt="Raphia naturel" class="img-fluid" src="sary/1710863689657.jpeg"/>
-<figcaption class="d-flex align-items-center justify-content-center">
-<h2>Raphia naturel</h2>
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<div class="container-fluid tm-container-content tm-mt-60">
-<div class="row mb-4">
-<h2 class="col-6 tm-text-primary">
-                    Catalogue
-                </h2>
-</div>
-<div class="row tm-mb-90 tm-gallery">
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-<figure class="effect-ming tm-video-item">
-<img alt="Sac en subic et rabane" class="img-fluid" src="sary/rabane/IMG-20240318-WA0033.jpg"/>
-<figcaption class="d-flex align-items-center justify-content-center">
-<h2>Sac en subic et rabanes</h2>
-</figcaption>
-</figure>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-<figure class="effect-ming tm-video-item">
-<img alt="Sac en subic et rabane" class="img-fluid" src="sary/rabane/IMG-20240318-WA0034.jpg"/>
-<figcaption class="d-flex align-items-center justify-content-center">
-<h2>Sac en subic et rabane</h2>
-</figcaption>
-</figure>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-<figure class="effect-ming tm-video-item">
-<img alt="Sac en subic et rabane" class="img-fluid" src="sary/rabane/IMG-20240318-WA0032.jpg"/>
-<figcaption class="d-flex align-items-center justify-content-center">
-<h2>Sac en subic et rabane</h2>
-</figcaption>
-</figure>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-<figure class="effect-ming tm-video-item">
-<img alt="Sac en subic et rabane" class="img-fluid" src="sary/rabane/IMG-20240318-WA0036.jpg"/>
-<figcaption class="d-flex align-items-center justify-content-center">
-<h2>Subic et rabane </h2>
-</figcaption>
-</figure>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-<figure class="effect-ming tm-video-item">
-<img alt="Sac en subic et rabane" class="img-fluid" src="sary/rabane/IMG-20240318-WA0013.jpg"/>
-<figcaption class="d-flex align-items-center justify-content-center">
-<h2>Sac en subic et rabane</h2>
-</figcaption>
-</figure>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-<figure class="effect-ming tm-video-item">
-<img alt="Sac en subic et rabane" class="img-fluid" src="sary/rabane/IMG-20240318-WA0014.jpg"/>
-<figcaption class="d-flex align-items-center justify-content-center">
-<h2>Sac en tissu africaine</h2>
-</figcaption>
-</figure>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-<figure class="effect-ming tm-video-item">
-<img alt="Sac en subic et rabane" class="img-fluid" src="sary/rabane/IMG-20240318-WA0015.jpg"/>
-<figcaption class="d-flex align-items-center justify-content-center">
-<h2>Sac en tissu africaine et raphia</h2>
-</figcaption>
-</figure>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-<figure class="effect-ming tm-video-item">
-<img alt="Sac en subic et rabane" class="img-fluid" src="sary/rabane/IMG-20240318-WA0017.jpg"/>
-<figcaption class="d-flex align-items-center justify-content-center">
-<h2>Sac en tissu africaine et raphia</h2>
-</figcaption>
-</figure>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-<figure class="effect-ming tm-video-item">
-<img alt="Sac crochet raphia" class="img-fluid" src="sary/produit/I.jpeg"/>
-<figcaption class="d-flex align-items-center justify-content-center">
-<h2>Sac crochet raphia</h2>
-</figcaption>
-</figure>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-<figure class="effect-ming tm-video-item">
-<img alt="Sac crochet raphia" class="img-fluid" src="sary/produit/.trashed-1714225572-Sac Raphia Maneva-CR-002 - Copie.jpeg"/>
-<figcaption class="d-flex align-items-center justify-content-center">
-<h2>Sac crochet raphia</h2>
-</figcaption>
-</figure>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-<figure class="effect-ming tm-video-item">
-<img alt="Sac crochet en raphia" class="img-fluid" src="sary/produit/.trashed-1714225572-Sac crochet en raphia - Copie.jpeg"/>
-<figcaption class="d-flex align-items-center justify-content-center">
-<h2>Sac crochet en raphia</h2>
-</figcaption>
-</figure>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-<figure class="effect-ming tm-video-item">
-<img alt="Sac crochet en raphia" class="img-fluid" src="sary/produit/received_1039255590537327 - Copie.jpg"/>
-<figcaption class="d-flex align-items-center justify-content-center">
-<h2>Sac crochet en raphia</h2>
-</figcaption>
-</figure>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-<figure class="effect-ming tm-video-item">
-<img alt="Bandolière crochet en raphia" class="img-fluid" src="sary/produit/1711641130038.jpg"/>
-<figcaption class="d-flex align-items-center justify-content-center">
-<h2>Bandolière crochet en raphia</h2>
-</figcaption>
-</figure>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-<figure class="effect-ming tm-video-item">
-<img alt="Bandolière crochet en raphia" class="img-fluid" src="sary/produit/.trashed-1714225604-received_1375340996433831 - Copie.jpg"/>
-<figcaption class="d-flex align-items-center justify-content-center">
-<h2>Bandolière crochet en raphia</h2>
-</figcaption>
-</figure>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-<figure class="effect-ming tm-video-item">
-<img alt="Bandolière crochet en raphia" class="img-fluid" src="sary/sary/1710776679712.jpg"/>
-<figcaption class="d-flex align-items-center justify-content-center">
-<h2>Bandolière crochet en raphia</h2>
-</figcaption>
-</figure>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-<figure class="effect-ming tm-video-item">
-<img alt="Bandolière crochet en raphia" class="img-fluid" src="sary/produit/1711641819705.jpg"/>
-<figcaption class="d-flex align-items-center justify-content-center">
-<h2>Bandolière crochet en rephia</h2>
-</figcaption>
-</figure>
-</div>
-</div> <!-- row -->
-<div class="row tm-mb-90">
-<div class="col-12 d-flex justify-content-between align-items-center tm-paging-col">
-<div class="tm-paging d-flex">
-<a class="active tm-paging-link" href="./videos.html">Cliquez ici pour plus de modèle</a>
-</div>
-</div>
-</div>
-</div> <!-- container-fluid, tm-container-content -->
-</body>
-</main>
-<footer class="tm-bg-gray pt-5 pb-3">
-<div class="container-fluid tm-container-small">
-<div class="row">
-<div class="col-lg-6 col-md-12 mb-5">
-<h3 class="tm-text-primary mb-4">À Propos</h3>
-<p>Raphia Crochet de Madagascar fabrique des sacs artisanaux 100% naturels et faits main. Basée à Madagascar, notre entreprise exporte dans le monde entier.</p>
-<p><strong>Contact :</strong> WhatsApp : +261 34 96 377 41 | Email : sac.artisanal.de.madagascar@gmail.com</p>
-</div>
-<div class="col-lg-3 col-md-6 col-sm-6 col-12">
-<h3 class="tm-text-primary mb-4">Réseaux Sociaux</h3>
-<ul class="tm-social-links" style="display: flex;">
-<li><a href="https://web.facebook.com/Raphizio"><i class="fab fa-facebook"></i></a></li>
-<li class="mb-2"><a href="https://www.tiktok.com/@sac.raphia.mada"><i class="fab fa-tiktok"></i></a></li>
-<li class="mb-2"><a href="https://www.youtube.com/@sacartisanaldeMADAGASAR"> <i class="fab fa-youtube"></i></a></li>
-</ul>
-</div>
-</div>
-</div>
-</footer>
-<script src="js/plugins.js"></script>
-<script>
-        $(window).on("load", function() {
-            $('body').addClass('loaded');
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fab fa-empire mr-2"></i> Raphia Crochet
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Photos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="videos.html">Vidéos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./en/index.html">English</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="tm-hero">
+        <h1>Raphia Crochet de Madagascar</h1>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container">
+        
+        <!-- Intro SEO Text -->
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="intro-box text-center">
+                    <h2>Artisanat et raphia de Madagascar</h2>
+                    <p class="text-muted">
+                        Découvrez notre univers dédié à l'<strong>artisanat de Madagascar</strong>, à travers des créations uniques issues de notre <strong>usine de sac en raphia à Madagascar</strong>.
+                        Nous sommes reconnus comme <strong>grossiste raphia Madagascar</strong> et <strong>fournisseur de raphia à Madagascar</strong>, basés à <strong>artisanat malgache Antananarivo</strong>.
+                        Chaque produit est fabriqué avec soin en <strong>raphia de Madagascar</strong>, dans le respect de l’environnement.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Fabrication -->
+        <div class="row mt-5 pt-5">
+            <div class="col-12 text-center">
+                <h2 class="tm-text-primary mb-3">Fabrication de sacs en raphia 100% naturel</h2>
+                <h4 class="text-muted mb-4" style="font-family:'Playfair Display'; font-style:italic;">Made in Madagascar</h4>
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <p style="font-size: 1.1rem; color: #666;">
+                        Bienvenue chez <strong>Raphia Crochet de Madagascar</strong>, le spécialiste des <em>sacs faits main en raphia naturel</em>. Nos artisans malgaches créent des modèles uniques avec passion et savoir-faire. Que vous soyez revendeur, distributeur ou amoureux de l’artisanat, découvrez notre <strong>catalogue de sacs crochetés</strong> prêts à l’exportation. Qualité, durabilité et authenticité au cœur de chaque création.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Matières Premières -->
+        <div class="mt-5 pt-5">
+            <div class="section-title">
+                <h2>Nos matières premières</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <a href="sary/rouleau_rabane.jpeg" class="glightbox" data-gallery="matieres">
+                                <img alt="Rouleau de rabane naturel" src="sary/rouleau_rabane.jpeg"/>
+                            </a>
+                        </div>
+                        <div class="card-caption">
+                            <h2>Rouleau de rabane naturel</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <a href="sary/1710863689657.jpeg" class="glightbox" data-gallery="matieres">
+                                <img alt="Raphia naturel" src="sary/1710863689657.jpeg"/>
+                            </a>
+                        </div>
+                        <div class="card-caption">
+                            <h2>Raphia naturel</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Catalogue -->
+        <div class="mt-5">
+            <div class="section-title">
+                <h2>Catalogue</h2>
+            </div>
+            
+            <div class="row">
+                <!-- Items Catalogue -->
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <a href="sary/rabane/IMG-20240318-WA0033.jpg" class="glightbox" data-gallery="produits" data-description="Sac en subic et rabanes">
+                                <img alt="Sac en subic et rabane" src="sary/rabane/IMG-20240318-WA0033.jpg"/>
+                            </a>
+                        </div>
+                        <div class="card-caption">
+                            <h2>Sac en subic et rabanes</h2>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <a href="sary/rabane/IMG-20240318-WA0034.jpg" class="glightbox" data-gallery="produits">
+                                <img alt="Sac en subic et rabane" src="sary/rabane/IMG-20240318-WA0034.jpg"/>
+                            </a>
+                        </div>
+                        <div class="card-caption">
+                            <h2>Sac en subic et rabane</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <a href="sary/rabane/IMG-20240318-WA0032.jpg" class="glightbox" data-gallery="produits">
+                                <img alt="Sac en subic et rabane" src="sary/rabane/IMG-20240318-WA0032.jpg"/>
+                            </a>
+                        </div>
+                        <div class="card-caption">
+                            <h2>Sac en subic et rabane</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <a href="sary/rabane/IMG-20240318-WA0036.jpg" class="glightbox" data-gallery="produits">
+                                <img alt="Sac en subic et rabane" src="sary/rabane/IMG-20240318-WA0036.jpg"/>
+                            </a>
+                        </div>
+                        <div class="card-caption">
+                            <h2>Subic et rabane</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <a href="sary/rabane/IMG-20240318-WA0013.jpg" class="glightbox" data-gallery="produits">
+                                <img alt="Sac en subic et rabane" src="sary/rabane/IMG-20240318-WA0013.jpg"/>
+                            </a>
+                        </div>
+                        <div class="card-caption">
+                            <h2>Sac en subic et rabane</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <a href="sary/rabane/IMG-20240318-WA0014.jpg" class="glightbox" data-gallery="produits">
+                                <img alt="Sac en tissu africaine" src="sary/rabane/IMG-20240318-WA0014.jpg"/>
+                            </a>
+                        </div>
+                        <div class="card-caption">
+                            <h2>Sac en tissu africain</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <a href="sary/rabane/IMG-20240318-WA0015.jpg" class="glightbox" data-gallery="produits">
+                                <img alt="Sac en tissu africaine et raphia" src="sary/rabane/IMG-20240318-WA0015.jpg"/>
+                            </a>
+                        </div>
+                        <div class="card-caption">
+                            <h2>Tissu africain & raphia</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <a href="sary/rabane/IMG-20240318-WA0017.jpg" class="glightbox" data-gallery="produits">
+                                <img alt="Sac en tissu africaine et raphia" src="sary/rabane/IMG-20240318-WA0017.jpg"/>
+                            </a>
+                        </div>
+                        <div class="card-caption">
+                            <h2>Tissu africain & raphia</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <a href="sary/produit/I.jpeg" class="glightbox" data-gallery="produits">
+                                <img alt="Sac crochet raphia" src="sary/produit/I.jpeg"/>
+                            </a>
+                        </div>
+                        <div class="card-caption">
+                            <h2>Sac crochet raphia</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <a href="sary/produit/.trashed-1714225572-Sac Raphia Maneva-CR-002 - Copie.jpeg" class="glightbox" data-gallery="produits">
+                                <img alt="Sac crochet raphia" src="sary/produit/.trashed-1714225572-Sac Raphia Maneva-CR-002 - Copie.jpeg"/>
+                            </a>
+                        </div>
+                        <div class="card-caption">
+                            <h2>Sac crochet raphia</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <a href="sary/produit/.trashed-1714225572-Sac crochet en raphia - Copie.jpeg" class="glightbox" data-gallery="produits">
+                                <img alt="Sac crochet en raphia" src="sary/produit/.trashed-1714225572-Sac crochet en raphia - Copie.jpeg"/>
+                            </a>
+                        </div>
+                        <div class="card-caption">
+                            <h2>Sac crochet en raphia</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <a href="sary/produit/received_1039255590537327 - Copie.jpg" class="glightbox" data-gallery="produits">
+                                <img alt="Sac crochet en raphia" src="sary/produit/received_1039255590537327 - Copie.jpg"/>
+                            </a>
+                        </div>
+                        <div class="card-caption">
+                            <h2>Sac crochet en raphia</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <a href="sary/produit/1711641130038.jpg" class="glightbox" data-gallery="produits">
+                                <img alt="Bandolière crochet en raphia" src="sary/produit/1711641130038.jpg"/>
+                            </a>
+                        </div>
+                        <div class="card-caption">
+                            <h2>Bandoulière raphia</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <a href="sary/produit/.trashed-1714225604-received_1375340996433831 - Copie.jpg" class="glightbox" data-gallery="produits">
+                                <img alt="Bandolière crochet en raphia" src="sary/produit/.trashed-1714225604-received_1375340996433831 - Copie.jpg"/>
+                            </a>
+                        </div>
+                        <div class="card-caption">
+                            <h2>Bandoulière raphia</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <a href="sary/sary/1710776679712.jpg" class="glightbox" data-gallery="produits">
+                                <img alt="Bandolière crochet en raphia" src="sary/sary/1710776679712.jpg"/>
+                            </a>
+                        </div>
+                        <div class="card-caption">
+                            <h2>Bandoulière raphia</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <a href="sary/produit/1711641819705.jpg" class="glightbox" data-gallery="produits">
+                                <img alt="Bandolière crochet en raphia" src="sary/produit/1711641819705.jpg"/>
+                            </a>
+                        </div>
+                        <div class="card-caption">
+                            <h2>Bandoulière en raphia</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <a href="sary/sary/boite.jpg" class="glightbox" data-gallery="produits">
+                                <img alt="Bandolière crochet en raphia" src="sary/sary/boite.jpg"/>
+                            </a>
+                        </div>
+                        <div class="card-caption">
+                            <h2>Boite de chocolat en raphia</h2>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End Row Visible -->
+
+            <!-- ELEMENTS DE GALERIE CACHÉS (Visibles uniquement dans le diaporama) -->
+            <!-- Ajoutez ici vos liens <a> supplémentaires -->
+            <div class="card-custom-hidden">
+                <!-- Exemple : -->
+                <!-- <a href="sary/votre-image-cachee.jpg" class="glightbox" data-gallery="produits" data-description="Modèle supplémentaire"></a> -->
+            </div>
+
+            <!-- Bouton plus de modèles -->
+            <div class="row mt-5 mb-5">
+                <div class="col-12 text-center">
+                    <a class="btn-premium" href="./videos.html">Voir plus de modèles en vidéo</a>
+                </div>
+            </div>
+
+        </div> 
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-5">
+                    <h3 class="mb-4">À Propos</h3>
+                    <p>Raphia Crochet de Madagascar fabrique des sacs artisanaux 100% naturels et faits main. Basée à Madagascar, notre entreprise exporte dans le monde entier l'excellence du savoir-faire malgache.</p>
+                    <p class="mt-4"><strong style="color:var(--gold)">Contact :</strong><br> 
+                    <i class="fab fa-whatsapp"></i> +261 34 96 377 41 <br>
+                    <i class="far fa-envelope"></i> sac.artisanal.de.madagascar@gmail.com</p>
+                </div>
+                <div class="col-lg-3 offset-lg-3 col-md-6 col-sm-6 col-12">
+                    <h3 class="mb-4">Suivez-nous</h3>
+                    <div class="social-icons">
+                        <a href="https://web.facebook.com/Raphizio"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.tiktok.com/@sac.raphia.mada"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/@sacartisanaldeMADAGASAR"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- GLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    
+    <!-- Initialisation de la Galerie -->
+    <script>
+        const lightbox = GLightbox({
+            selector: '.glightbox',
+            touchNavigation: true,
+            loop: true,
+            autoplayVideos: true
         });
     </script>
+
+</body>
 </html>
