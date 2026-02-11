@@ -1,60 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset 
+xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-
+<!-- HOME FR -->
 <url>
   <loc>https://raphia-crochet-mu.vercel.app/</loc>
-  <lastmod>2026-02-10T08:44:41+00:00</lastmod>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://raphia-crochet-mu.vercel.app/"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://raphia-crochet-mu.vercel.app/en/index.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://raphia-crochet-mu.vercel.app/"/>
+  <lastmod>2026-02-11T08:44:41+00:00</lastmod>
   <changefreq>daily</changefreq>
   <priority>1.00</priority>
 </url>
-<url>
-  <loc>https://raphia-crochet-mu.vercel.app/videos.html</loc>
-  <lastmod>2026-01-29T08:44:42+00:00</lastmod>
-  <changefreq>weeckly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://raphia-crochet-mu.vercel.app/about.html</loc>
-  <changefreq>weeckly</changefreq>
-  <lastmod>2026-01-29T08:44:42+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://raphia-crochet-mu.vercel.app/contact.html</loc>
-  <changefreq>weeckly</changefreq>
-  <lastmod>2026-01-29T08:44:42+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+
+<!-- HOME EN -->
 <url>
   <loc>https://raphia-crochet-mu.vercel.app/en/index.html</loc>
-  <lastmod>2026-02-10T08:44:42+00:00</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://raphia-crochet-mu.vercel.app/en/index.html"/>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://raphia-crochet-mu.vercel.app/"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://raphia-crochet-mu.vercel.app/"/>
+  <lastmod>2026-02-11T08:44:42+00:00</lastmod>
   <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
+
+<!-- VIDEOS FR -->
+<url>
+  <loc>https://raphia-crochet-mu.vercel.app/videos.html</loc>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://raphia-crochet-mu.vercel.app/videos.html"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://raphia-crochet-mu.vercel.app/en/videos.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://raphia-crochet-mu.vercel.app/videos.html"/>
+  <lastmod>2026-01-29T08:44:42+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<!-- VIDEOS EN -->
 <url>
   <loc>https://raphia-crochet-mu.vercel.app/en/videos.html</loc>
-  <changefreq>weeckly</changefreq>
+  <xhtml:link rel="alternate" hreflang="en" href="https://raphia-crochet-mu.vercel.app/en/videos.html"/>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://raphia-crochet-mu.vercel.app/videos.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://raphia-crochet-mu.vercel.app/videos.html"/>
   <lastmod>2026-01-29T08:44:42+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://raphia-crochet-mu.vercel.app/en/about.html</loc>
-  <changefreq>weeckly</changefreq>
-  <lastmod>2026-01-29T08:44:43+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://raphia-crochet-mu.vercel.app/en/contact.html</loc>
-  <changefreq>weeckly</changefreq>
-  <lastmod>2026-01-29T08:44:43+00:00</lastmod>
+  <changefreq>weekly</changefreq>
   <priority>0.64</priority>
 </url>
 
+<!-- ABOUT FR -->
+<url>
+  <loc>https://raphia-crochet-mu.vercel.app/about.html</loc>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://raphia-crochet-mu.vercel.app/about.html"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://raphia-crochet-mu.vercel.app/en/about.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://raphia-crochet-mu.vercel.app/about.html"/>
+  <lastmod>2026-01-29T08:44:42+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<!-- ABOUT EN -->
+<url>
+  <loc>https://raphia-crochet-mu.vercel.app/en/about.html</loc>
+  <xhtml:link rel="alternate" hreflang="en" href="https://raphia-crochet-mu.vercel.app/en/about.html"/>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://raphia-crochet-mu.vercel.app/about.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://raphia-crochet-mu.vercel.app/about.html"/>
+  <lastmod>2026-01-29T08:44:43+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+
+<!-- CONTACT FR -->
+<url>
+  <loc>https://raphia-crochet-mu.vercel.app/contact.html</loc>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://raphia-crochet-mu.vercel.app/contact.html"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://raphia-crochet-mu.vercel.app/en/contact.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://raphia-crochet-mu.vercel.app/contact.html"/>
+  <lastmod>2026-01-29T08:44:42+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<!-- CONTACT EN -->
+<url>
+  <loc>https://raphia-crochet-mu.vercel.app/en/contact.html</loc>
+  <xhtml:link rel="alternate" hreflang="en" href="https://raphia-crochet-mu.vercel.app/en/contact.html"/>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://raphia-crochet-mu.vercel.app/contact.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://raphia-crochet-mu.vercel.app/contact.html"/>
+  <lastmod>2026-01-29T08:44:43+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
 
 </urlset>
