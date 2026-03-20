@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Wholesale Handmade Raphia Bags & Baskets | Madagascar</title>
+    <title>Grossiste de sacs et paniers artisanaux en rabane | Madagascar</title>
 
     <meta name="description"
-        content="Wholesale and manufacturer of handmade raphia bags and baskets in Madagascar. B2B supplier for importers, retailers and international brands. Artisanal production and export." />
+        content="Grossiste et fabricant de sacs et paniers artisanaux en rabane à Madagascar. Fournisseur B2B pour importateurs, boutiques et marques. Production artisanale et export." />
 
     <meta name="keywords"
-        content="wholesale handmade bags, wholesale raphia baskets, raphia bags supplier Madagascar, artisanal baskets B2B, handmade basket manufacturer, wholesale natural fiber bags" />
+        content="grossiste sacs artisanaux, grossiste paniers rabane, fournisseur paniers artisanaux Madagascar, sacs rabane B2B, import paniers artisanaux, fabricant paniers rabane" />
 
-    <!-- Bootstrap -->
+    <!-- Open Graph -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- FontAwesome -->
@@ -30,45 +30,58 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 
     <style>
+        :root {
+            --primary-color: #8D6E63;
+            /* Marron Raphia */
+            --secondary-color: #FDFBF7;
+            /* Crème papier */
+            --accent-color: #5D4037;
+            /* Marron foncé */
+            --text-color: #4A4A4A;
+            --gold: #C5A059;
+        }
+
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: #FDFBF7;
-            color: #4A4A4A;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
             line-height: 1.8;
         }
 
-        h1, h2, h3 {
+        h1,
+        h2,
+        h3,
+        .navbar-brand {
             font-family: 'Playfair Display', serif;
-            color: #5D4037;
+            color: var(--accent-color);
         }
 
+        /* Navbar */
         .navbar {
             background-color: #fff;
             box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
             padding: 1rem 0;
         }
 
-        section {
-            padding: 70px 0;
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--primary-color) !important;
         }
 
-        .seo-card {
-            background: #fff;
-            padding: 45px;
-            border-radius: 12px;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
-            max-width: 900px;
-            margin: 0 auto;
+        .nav-link {
+            color: var(--text-color) !important;
+            font-weight: 500;
+            margin-left: 15px;
+            transition: color 0.3s;
         }
 
-        .gallery-img {
-            border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            aspect-ratio: 1 / 1.2;
-            object-fit: cover;
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--gold) !important;
         }
 
+        /* Hero Section */
         .tm-hero {
             position: relative;
             height: 70vh;
@@ -83,30 +96,209 @@
         .tm-hero::before {
             content: "";
             position: absolute;
-            inset: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             background: rgba(0, 0, 0, 0.4);
         }
 
-        .tm-hero h1,
-        .tm-hero p {
+        .tm-hero h1 {
             position: relative;
             z-index: 1;
             color: #fff;
-            text-align: center;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .tm-hero h1 {
             font-size: 3.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            padding: 0 15px;
         }
 
-        .tm-hero p {
-            font-size: 2rem;
+        /* Sections */
+        section {
+            padding: 60px 0;
         }
 
+        .intro-box {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+            margin-top: -80px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--gold);
+            margin: 15px auto 0;
+        }
+
+        /* Gallery Cards */
+        .card-custom {
+            border: none;
+            background: transparent;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .card-custom:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img-wrapper {
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            aspect-ratio: 1 / 1.2;
+            position: relative;
+            cursor: zoom-in;
+            /* Curseur loupe pour indiquer le clic */
+        }
+
+        .card-img-wrapper a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .card-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: transform 0.5s ease;
+        }
+
+        .card-custom:hover img {
+            transform: scale(1.05);
+        }
+
+        .card-caption {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .card-caption h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 0;
+            color: var(--accent-color);
+        }
+
+        /* CLASSE POUR CACHER DES IMAGES (mais visibles dans la galerie) */
+        .card-custom-hidden {
+            display: none !important;
+        }
+
+        /* Button */
+        .btn-premium {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background 0.3s;
+            display: inline-block;
+            font-weight: 600;
+            letter-spacing: 1px;
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-premium:hover {
+            background-color: transparent;
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c2c2c;
+            color: #ccc;
+            padding: 60px 0;
+            margin-top: 60px;
+        }
+
+        footer h3 {
+            color: var(--gold);
+            font-size: 1.5rem;
+        }
+
+        footer a {
+            color: #ccc;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: var(--gold);
+        }
+
+        .social-icons a {
+            font-size: 1.5rem;
+            margin-right: 15px;
+        }
+
+        /* Responsive Fixes */
         @media (max-width: 768px) {
             .tm-hero h1 {
                 font-size: 2.5rem;
+            }
+
+            .intro-box {
+                margin-top: 20px;
+                padding: 20px;
+            }
+        }
+
+        /* Card SEO Catalogue */
+        .catalogue-seo-card {
+            background: #ffffff;
+            padding: 40px 45px;
+            border-radius: 12px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .catalogue-seo-card h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+        }
+
+        .catalogue-seo-card p {
+            font-size: 1.05rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .btn-custom {
+            background-color: #8B5E3C;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #6d472d;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .catalogue-seo-card {
+                padding: 25px;
             }
         }
     </style>
@@ -118,20 +310,40 @@
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
             <a class="navbar-brand" href="./index.html">
-                <i class="fab fa-empire mr-2"></i> Raphia Crochet de Madagascar
+                <i class="fab fa-empire mr-2"></i> Raffia Crochet Madagascar
             </a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Photos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="videos.html">Vidéos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./en/index.html">English</a></li>
+
+                    <!-- PRODUITS DROPDOWN -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./wholesale-artisanal-bags.html">Bag</a></li>
+                            <li><a class="dropdown-item" href="./wholesale-artisanal-bags.html">Shoulder strap</a></li>
+                            <li><a class="dropdown-item" href="./wholesale-artisanal-bags.html">Pouch</a></li>
+                            <li><a class="dropdown-item" href="./wholesale-artisanal-bags.html">Raffia roll basket</a>
+                            </li>
+                            <li><a class="dropdown-item" href="./wholesale-artisanal-bags.html">Plant fiber basket</a>
+                            </li>
+                            <li><a class="dropdown-item" href="./wholesale-artisanal-bags.html">Accessoires</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./videos.html">Videos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Français</a></li>
+
                 </ul>
             </div>
         </div>
@@ -153,7 +365,8 @@
             <div class="seo-card text-center">
                 <h2>B2B Supplier of Handmade Raphia Baskets</h2>
                 <p>
-                    <strong>Raphia Crochet of Madagascar</strong> is a <strong>wholesale manufacturer of handmade raphia bags and baskets</strong>,
+                    <strong>Raphia Crochet of Madagascar</strong> is a <strong>wholesale manufacturer of handmade raphia
+                        bags and baskets</strong>,
                     supplying <strong>importers, wholesalers, concept stores and international brands</strong>.
                 </p>
                 <p>
@@ -169,27 +382,378 @@
         </div>
     </section>
 
-    <!-- GALLERY -->
+    <!-- CATALOG TITLE -->
     <section>
         <div class="container">
+
             <div class="text-center mb-5">
-                <h2>Handmade Raphia Basket Collection</h2>
-                <p class="text-muted">Sample models available for wholesale orders</p>
+                <h2>Raffia & Rabane Bags Catalogue – Wholesale Madagascar</h2>
+                <p class="text-muted">
+                    Discover our handmade raffia bags designed for professional buyers and bulk orders.
+                </p>
             </div>
 
+            <!-- FEATURED PRODUCT -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper" style="aspect-ratio: 16 / 6;">
+                            <a href="../sary/rabaneV/sac rabane de luxe.png" class="glightbox" data-gallery="products">
+                                <img src="../sary/rabaneV/sac rabane de luxe.png"
+                                    alt="Premium raffia bag handmade in Madagascar for wholesale and export"
+                                    loading="lazy">
+                            </a>
+                        </div>
+
+                        <div class="card-caption mt-3">
+                            <h2>Premium Raffia Bag – Handmade in Madagascar</h2>
+
+                            <p>
+                                This <strong>high-quality raffia bag made in Madagascar</strong> is designed for
+                                <strong>importers, wholesalers, and retail brands</strong> looking for authentic
+                                handmade products.
+                            </p>
+
+                            <p>
+                                Crafted from <strong>natural raffia fibers</strong>, this model combines
+                                <strong>durability, elegance, and artisanal craftsmanship</strong>.
+                                Perfect for <strong>B2B wholesale orders and international export</strong>.
+                            </p>
+
+                            <p class="mb-0">
+                                ✔ Bulk production available<br>
+                                ✔ Custom design possible<br>
+                                ✔ Worldwide shipping
+                            </p>
+
+                            <a href="contact.html" class="btn btn-dark mt-3">
+                                Request this product in bulk
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT GRID -->
             <div class="row">
+
+                <!-- ITEM 1 -->
                 <div class="col-6 col-md-4 col-lg-3 mb-4">
-                    <img src="sary/paniers/panier-rabane-artisanal-1.jpg"
-                        alt="Handmade natural raphia basket – wholesale supplier Madagascar"
-                        class="gallery-img" loading="lazy">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <a href="../sary/rabaneV/rouleau de raphia orange.png" class="glightbox"
+                                data-gallery="products">
+                                <img src="../sary/rabaneV/rouleau de raphia orange.png"
+                                    alt="Handmade raffia bag orange Madagascar wholesale" loading="lazy">
+                            </a>
+                        </div>
+                        <div class="card-caption">
+                            <h3>Orange Raffia Bag</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 2 -->
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <a href="../sary/rabaneV/rabane couleur mixte.png" class="glightbox"
+                                data-gallery="products">
+                                <img src="../sary/rabaneV/rabane couleur mixte.png"
+                                    alt="Mixed color rabane bag handmade Madagascar" loading="lazy">
+                            </a>
+                        </div>
+                        <div class="card-caption">
+                            <h3>Mixed Color Rabane Bag</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 3 -->
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <a href="../sary/rabaneV/3 paniers rouleau de raphia couleur uni.png" class="glightbox"
+                                data-gallery="products">
+                                <img src="../sary/rabaneV/3 paniers rouleau de raphia couleur uni.png"
+                                    alt="Set of raffia baskets handmade Madagascar" loading="lazy">
+                            </a>
+                        </div>
+                        <div class="card-caption">
+                            <h3>Set of Raffia Baskets</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 4 -->
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <a href="../sary/rabaneV/joli motif sur rabane.png" class="glightbox"
+                                data-gallery="products">
+                                <img src="../sary/rabaneV/joli motif sur rabane.png"
+                                    alt="Pattern rabane basket handmade Madagascar" loading="lazy">
+                            </a>
+                        </div>
+                        <div class="card-caption">
+                            <h3>Pattern Rabane Basket</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <a href="../sary/rabaneV/joli motif sur rabane.png" class="glightbox"
+                                data-gallery="products" data-description="Pattern rabane basket handmade in Madagascar">
+                                <img alt="Pattern rabane basket handmade Madagascar – wholesale artisanal bags supplier"
+                                    src="../sary/rabaneV/joli motif sur rabane.png" loading="lazy" />
+                            </a>
+                        </div>
+                        <div class="card-caption">
+                            <h3>Pattern Rabane Basket</h3>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-6 col-md-4 col-lg-3 mb-4">
-                    <img src="sary/paniers/panier-rabane-artisanal-2.jpg"
-                        alt="Handwoven raphia basket – artisanal basket manufacturer"
-                        class="gallery-img" loading="lazy">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <a href="../sary/rabaneV/Panier rabane.png" class="glightbox" data-gallery="products"
+                                data-description="Four-corner raffia bag with pattern">
+                                <img alt="Four-corner raffia bag with pattern handmade Madagascar – B2B supplier"
+                                    src="../sary/rabaneV/Panier rabane.png" loading="lazy" />
+                            </a>
+                        </div>
+                        <div class="card-caption">
+                            <h3>Four-Corner Raffia Bag with Pattern</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <a href="../sary/rabaneV/rabane en motif fleur.png" class="glightbox"
+                                data-gallery="products"
+                                data-description="Roll of raphia with beautifull flowers pattern">
+                                <img alt="Set of handmade rabane baskets Madagascar – wholesale export"
+                                    src="../sary/rabaneV/rabane en motif fleur.png" loading="lazy" />
+                            </a>
+                        </div>
+                        <div class="card-caption">
+                            <h3>Roll of raphia with beautifull flowers pattern</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <a href="../sary/rabaneV/Panier rabane avec motif chat.png" class="glightbox"
+                                data-gallery="products" data-description="Rabane basket set with decorative pattern">
+                                <img alt="Rabane baskets with decorative pattern handmade Madagascar – artisanal supplier"
+                                    src="../sary/rabaneV/Panier rabane avec motif chat.png" loading="lazy" />
+                            </a>
+                        </div>
+                        <div class="card-caption">
+                            <h3>Decorative Rabane Basket Set</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section style="background:#FDFBF7; padding:70px 0;">
+
+        <div class="container">
+
+            <!-- TITRE + INTRO -->
+            <div class="mb-5" style="max-width:650px;">
+                <h2 style="font-family:'Playfair Display', serif; color:#5D4037;">
+                    Elegant Rectangular Raffia Roll Design
+                </h2>
+
+                <div style="width:60px;height:3px;background:#C5A059;margin:12px 0;"></div>
+
+                <p style="color:#4A4A4A; line-height:1.7;">
+                    Discover our collection of <strong>rectangular raffia roll bags</strong>, combining
+                    <strong>elegance, structure, and artisanal craftsmanship</strong>. These refined designs
+                    offer a modern and sophisticated look, perfect for boutiques and brands seeking
+                    unique, high-quality handmade products from Madagascar.
+                </p>
+            </div>
+
+            <!-- CONTENEUR PRODUITS -->
+            <div style="background:#ffffff;padding:30px;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,0.05);">
+                <div class="row">
+
+                    <!-- ITEM -->
+                    <div class="col-6 col-md-4 col-lg-3 mb-4">
+                        <div class="card-custom">
+                            <div class="card-img-wrapper">
+                                <a href="../sary/rabaneV/séries de 3 paniers rectangle motif chat.png" class="glightbox"
+                                    data-gallery="produits"
+                                    data-description="Serie of 3 rectangle baskets with chat pattern">
+                                    <img src="../sary/rabaneV/séries de 3 paniers rectangle motif chat.png"
+                                        loading="lazy" />
+                                </a>
+                            </div>
+                            <div class="card-caption">
+                                <h3>Serie of 3 rectangle baskets with chat pattern</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ITEM -->
+                    <div class="col-6 col-md-4 col-lg-3 mb-4">
+                        <div class="card-custom">
+                            <div class="card-img-wrapper">
+                                <a href="../sary/rabaneV/séries de 3 paniers rectangle motif animal.png"
+                                    class="glightbox" data-gallery="produits"
+                                    data-description="Serie of 3 rectangle baskets with animal pattern">
+                                    <img src="../sary/rabaneV/séries de 3 paniers rectangle motif animal.png"
+                                        loading="lazy" />
+                                </a>
+                            </div>
+                            <div class="card-caption">
+                                <h3>Serie of 3 rectangle baskets with animal pattern</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ITEM -->
+                    <div class="col-6 col-md-4 col-lg-3 mb-4">
+                        <div class="card-custom">
+                            <div class="card-img-wrapper">
+                                <a href="../sary/rabaneV/séries de 3 paniers rectangle motif fleur.png"
+                                    class="glightbox" data-gallery="produits"
+                                    data-description="Serie of 3 rectangle baskets with flowers pattern">
+                                    <img src="../sary/rabaneV/séries de 3 paniers rectangle motif fleur.png"
+                                        loading="lazy" />
+                                </a>
+                            </div>
+                            <div class="card-caption">
+                                <h3>Serie of 3 rectangle baskets with flowers pattern</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ITEM -->
+                    <div class="col-6 col-md-4 col-lg-3 mb-4">
+                        <div class="card-custom">
+                            <div class="card-img-wrapper">
+                                <a href="../sary/rabaneV/séries de 3 paniers rectangle joli motif.png" class="glightbox"
+                                    data-gallery="produits"
+                                    data-description="Serie of 3 rectangle baskets with beautifull pattern">
+                                    <img src="../sary/rabaneV/séries de 3 paniers rectangle joli motif.png"
+                                        loading="lazy" />
+                                </a>
+                            </div>
+                            <div class="card-caption">
+                                <h3>Serie of 3 rectangle baskets with beautifull pattern</h3>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+
+        </div>
+    </section>
+
+    <section style="background:#FDFBF7; padding:70px 0;">
+
+        <div class="container">
+
+            <!-- TITRE + INTRO -->
+            <div class="mb-5" style="max-width:650px;">
+                <h2 style="font-family:'Playfair Display', serif; color:#5D4037;">
+                    Elegant braided raffia roll basket
+                </h2>
+
+                <div style="width:60px;height:3px;background:#C5A059;margin:12px 0;"></div>
+
+                <p style="color:#4A4A4A; line-height:1.7;">
+                    Discover our collection of <strong>women's bags made from braided raffia rolls</strong>,
+                    combining
+                    <strong>elegance, structure, and craftsmanship</strong>. These refined designs
+                    offer a modern and sophisticated style, ideal for boutiques and brands seeking
+                    unique, high-quality handcrafted products from Madagascar.
+                </p>
+            </div>
+
+            <!-- CONTENEUR PRODUITS -->
+            <div
+                style=" background:#ffffff; padding:30px;border-radius:16px; box-shadow:0 10px 30px rgba(0,0,0,0.05); ">
+                <div class="row">
+
+                    <!-- ITEM -->
+                    <div class="col-6 col-md-4 col-lg-3 mb-4">
+                        <div class="card-custom">
+                            <div class="card-img-wrapper">
+                                <a href="../sary/rabaneV/sac dame élégant.png" class="glightbox" data-gallery="produits"
+                                    data-description="Elegant lady bag">
+                                    <img src="../sary/rabaneV/sac dame élégant.png" loading="lazy" />
+                                </a>
+                            </div>
+                            <div class="card-caption">
+                                <h3>Elegant lady bag</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ITEM -->
+                    <div class="col-6 col-md-4 col-lg-3 mb-4">
+                        <div class="card-custom">
+                            <div class="card-img-wrapper">
+                                <a href="../sary/rabaneV/séries de 3 paniers rectangle motif animal.png"
+                                    class="glightbox" data-gallery="produits"
+                                    data-description="Sac dame en rouleau de raphia tressé">
+                                    <img src="../sary/rabaneV/sac dame en rouleau de raphia tressé.png"
+                                        loading="lazy" />
+                                </a>
+                            </div>
+                            <div class="card-caption">
+                                <h3>Women's bag made from a roll of braided raffia</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ITEM -->
+                    <div class="col-6 col-md-4 col-lg-3 mb-4">
+                        <div class="card-custom">
+                            <div class="card-img-wrapper">
+                                <a href="../sary/rabaneV/séries de 3 paniers rectangle motif fleur.png"
+                                    class="glightbox" data-gallery="produits" data-description="Raffia bag 'boat'">
+                                    <img src="../sary/rabaneV/sac bateau rabane.png" loading="lazy" />
+                                </a>
+                            </div>
+                            <div class="card-caption">
+                                <h3>Raffia bag 'boat'</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ITEM -->
+                    <div class="col-6 col-md-4 col-lg-3 mb-4">
+                        <div class="card-custom">
+                            <div class="card-img-wrapper">
+                                <a href="../sary/rabaneV/sac dame rabane avec motif.png" class="glightbox"
+                                    data-gallery="produits" data-description="Sac dame en rabane avec motif">
+                                    <img src="../sary/rabaneV/sac dame rabane avec motif.png" loading="lazy" />
+                                </a>
+                            </div>
+                            <div class="card-caption">
+                                <h3>Women's raffia bag with pattern</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -205,7 +769,51 @@
             </a>
         </div>
     </section>
+<!-- Bootstrap JS (OBLIGATOIRE pour dropdown) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+<!-- GLightbox -->
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+<script>
+    const lightbox = GLightbox({
+        selector: '.glightbox'
+    });
+</script>
 </body>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <h3>Raffia Crochet Madagascar</h3>
+                <p>
+                    Handmade raffia bags manufacturer and artisanal workshop based in Madagascar.
+                    We work with <strong>importers, wholesalers and professional buyers</strong> worldwide.
+                </p>
+            </div>
+            <div class="col-md-6 mb-3 text-md-end">
+                <p>
+                    📍 Antananarivo, Madagascar<br>
+                    🌍 Worldwide export – B2B & Wholesale
+                </p>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <h3 class="mb-4">Follow us</h3>
+            <div class="social-icons">
+                <a href="https://web.facebook.com/Raphizio"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.tiktok.com/@sac.raphia.mada"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/@sacartisanaldeMADAGASAR"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <hr style="border-color: rgba(255,255,255,0.1);">
+
+        <p class="text-center mb-0">
+            © <span id="year"></span> Raffia Crochet Madagascar – Handmade Raffia Bags Manufacturer & Wholesale
+            Supplier
+        </p>
+    </div>
+</footer>
 
 </html>
